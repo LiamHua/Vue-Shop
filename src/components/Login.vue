@@ -59,6 +59,7 @@
           window.sessionStorage.setItem('token', 'fhsdhfshfiudhfuishfuisdhfui')
           this.$message.success('登录成功！')
           await this.$router.push('/home')
+          // TODO 有一个小bug：点击退出登陆后需要刷新页面才能输入信息进行登录，否则无法输入
         })
       }
     }
